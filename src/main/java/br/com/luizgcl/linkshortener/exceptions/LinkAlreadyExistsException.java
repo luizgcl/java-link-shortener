@@ -5,7 +5,7 @@ import lombok.Getter;
 @Getter
 public class LinkAlreadyExistsException extends RuntimeException {
 
-    private String code;
+    private final String code;
 
     public LinkAlreadyExistsException() {
         super("O link solicitado já existe");
